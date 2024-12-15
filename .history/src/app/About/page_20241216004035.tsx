@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SecondLast from "../Components/SecondLast";
+import SecondLast from "../components/SecondLast";
 
 const page = () => {
   return (

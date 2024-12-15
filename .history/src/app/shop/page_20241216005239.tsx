@@ -5,6 +5,7 @@ import { FaChevronRight } from "react-icons/fa6";
 import { IoFilter } from "react-icons/io5";
 import { BiGridSmall } from "react-icons/bi";
 import { BsViewList } from "react-icons/bs";
+import AboveFooter from "../Components/AboveFooter";
 import Link from "next/link";
 import Pagination from "../Components/Pagination";
 import { redirect } from "next/navigation";
