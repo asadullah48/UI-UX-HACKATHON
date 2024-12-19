@@ -8,7 +8,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { SlCalender } from "react-icons/sl";
 import { FaTag } from "react-icons/fa6";
 
-const blog = () => {
+const blo = () => {
   return (
     <>
       <div>
@@ -266,4 +266,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default page;

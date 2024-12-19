@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa6";
 import SecondLast from "../../Components/SecondLast";
 
-const account = () => {
+const Account = () => {
   return (
     <>
       <div className="relative">

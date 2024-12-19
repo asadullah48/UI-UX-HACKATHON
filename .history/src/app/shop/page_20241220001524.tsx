@@ -10,7 +10,7 @@ import Pagination from "../../Components/Pagination";
 import { redirect } from "next/navigation";
 import SecondLast from "../../Components/SecondLast";
 
-const shop = () => {
+const page = () => {
 
   const products = [
     {
@@ -220,4 +220,4 @@ const shop = () => {
   );
 };
 
-export default shop;
+export default page;

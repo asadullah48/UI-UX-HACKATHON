@@ -20,7 +20,7 @@ const Details = () => {
         <div className="w-full lg:w-[553px] flex flex-row">
           {/* Image Thumbnails */}
           <div className="w-[76px] hidden lg:flex flex-col items-center ">
-            {["/1.png", "/2.png", "/3.png", "/4.png"].map((src, idx) => (
+            {["", "/2.png", "/3.png", "/4.png"].map((src, idx) => (
               <div
                 key={idx}
                 className="w-[60px] h-[60px] bg-[#FFF9E5] mb-4 last:mb-0"
@@ -40,7 +40,7 @@ const Details = () => {
           <div className="w-full lg:w-[481px] flex justify-center bg-white">
             <div className="w-[90%] lg:w-[423px] h-[300px] lg:h-[500px] bg-[#FFF9E5] rounded-md relative">
               <Image
-                src="/pics8.png"
+                src="/pic8.png"
                 alt="Sofa"
                 layout="fill"
                 objectFit="contain"
@@ -148,7 +148,7 @@ const Details = () => {
                 <div className="border-b mb-6"></div>
                 <div className="flex items-center gap-4 mb-4">
                   <img
-                    src="/pics8.png"
+                    src="/pic8.png"
                     alt="Product"
                     className="w-16 h-16 bg-[#FBEBB5] rounded-lg object-cover"
                   />

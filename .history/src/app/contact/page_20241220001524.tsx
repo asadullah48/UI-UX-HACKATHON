@@ -6,7 +6,7 @@ import { FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
 import SecondLast from "../../Components/SecondLast";
 
-const contact = () => {
+const page = () => {
   return (
     <>
       <div className="relative">
@@ -149,4 +149,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default page;

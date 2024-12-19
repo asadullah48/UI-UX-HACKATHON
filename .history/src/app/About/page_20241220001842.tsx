@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import SecondLast from "../../Components/SecondLast";
 
-const about = () => {
+const page = () => {
   return (
     <div>
       <div className="relative">
@@ -15,7 +15,7 @@ const about = () => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <Image
-            src={"/Spic201.png"}
+            src={"/Spic2.png"}
             alt="pic2"
             width={77}
             height={77}
@@ -31,4 +31,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default page;

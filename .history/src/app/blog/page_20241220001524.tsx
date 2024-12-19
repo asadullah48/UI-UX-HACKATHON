@@ -8,13 +8,13 @@ import { IoPersonSharp } from "react-icons/io5";
 import { SlCalender } from "react-icons/sl";
 import { FaTag } from "react-icons/fa6";
 
-const blog = () => {
+const page = () => {
   return (
     <>
       <div>
         <div className="relative">
           <Image
-            src={"/Spic101.png"}
+            src={"/Spic1.png"}
             alt="pic1"
             width={1440}
             height={316}
@@ -22,7 +22,7 @@ const blog = () => {
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             <Image
-              src={"/Spic201.png"}
+              src={"/Spic2.png"}
               alt="pic2"
               width={77}
               height={77}
@@ -266,4 +266,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default page;

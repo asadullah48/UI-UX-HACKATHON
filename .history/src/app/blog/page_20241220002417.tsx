@@ -266,4 +266,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default page;

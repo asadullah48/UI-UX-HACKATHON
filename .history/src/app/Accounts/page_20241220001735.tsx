@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa6";
-import SecondLast from "../../Components/SecondLast";
+import SecondLast from "/.";
 
-const account = () => {
+const Account = () => {
   return (
     <>
       <div className="relative">
         <Image
-          src={"/Spic101.png"}
+          src={"/Spic1.png"}
           alt="pic1"
           width={1440}
           height={316}
@@ -17,7 +17,7 @@ const account = () => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <Image
-            src={"/Spic201.png"}
+            src={"/Spic2.png"}
             alt="pic2"
             width={77}
             height={77}
@@ -126,4 +126,4 @@ const account = () => {
   );
 };
 
-export default account;
+export default Account;

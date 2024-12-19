@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import SecondLast from "../../Components/SecondLast";
 
-const about = () => {
+const abou = () => {
   return (
     <div>
       <div className="relative">
@@ -31,4 +31,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default page;

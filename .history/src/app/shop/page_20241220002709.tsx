@@ -220,4 +220,4 @@ const shop = () => {
   );
 };
 
-export default shop;
+export default page;

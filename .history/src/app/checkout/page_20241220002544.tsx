@@ -17,7 +17,7 @@ const Checkout = () => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <Image
-            src={"/Spic201.png"}
+            src={"/Spic2.png"}
             alt="pic2"
             width={77}
             height={77}
