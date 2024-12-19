@@ -110,9 +110,7 @@ const shop = () => {
       price: "Rs. 25,000.00",
       image: "Spic19.png",
     },
-  ];
-
-  // @ts-expect-error
+  ]
   if(products === Number ) redirect("/ProductDetails")
 
   return (

@@ -112,7 +112,6 @@ const shop = () => {
     },
   ];
 
-  // @ts-expect-error
   if(products === Number ) redirect("/ProductDetails")
 
   return (

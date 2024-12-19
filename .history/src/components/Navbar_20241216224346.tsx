@@ -90,7 +90,7 @@ const Navbar = () => {
             <div className="border-b mb-6"></div>
             <div className="flex items-center gap-4 mb-4">
               <img
-                src="/pics8.png"
+                src="/pic8.png"
                 alt="Product"
                 className="w-16 h-16 bg-[#FBEBB5] rounded-lg object-cover"
               />
