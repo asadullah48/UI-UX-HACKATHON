@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "e:\Islami Books\Azkar Urdu صبح کے اذکار-1.pdf",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
