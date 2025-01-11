@@ -28,7 +28,7 @@ const Navbar = () => {
         <button
           className="text-black sm:hidden"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle navigation"
+          aria-label="Toggle navi"
         >
           <TiThMenu />
         </button>
@@ -74,7 +74,6 @@ const Navbar = () => {
           <FiSearch className="cursor-pointer" />
           <FaRegHeart className="cursor-pointer" />
           <button onClick={() => setIsCartOpen(!isCartOpen)}>
-          aria-label
             <IoCartOutline className="cursor-pointer" />
           </button>
           <div

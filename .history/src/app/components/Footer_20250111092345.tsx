@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="border border-[#D9D9D9] mt-6"></div>
             <div className="w-[306px] h-[24px]">
               <p className="font-[400] text-[16px] leading-[24px] text-black mt-8">
-                2022 Meubel House. All rights revered (hackathon template # 0 by asadullah)
+                2022 Meubel House. All rights revered (figma templ)
               </p>
             </div>
           </div>

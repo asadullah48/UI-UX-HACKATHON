@@ -74,7 +74,7 @@ const Home = () => {
             <Image
               src="/pic1.png"
               alt="Hero Image"
-              width={1000}
+              width={}
               height={1000}
               className="w-[90%] sm:w-[70%] sm:h[70%] md:w-[60%] lg:w-[80%] xl:w-[70%] object-contain max-w-[600px]"
             />
@@ -186,8 +186,8 @@ const Home = () => {
             <Image
               src={"/pic8.png"}
               alt="pic8"
-              width={1200}
-              height={1200}
+              width={983}
+              height={799}
               className="w-full  object-cover"
             />
           </div>

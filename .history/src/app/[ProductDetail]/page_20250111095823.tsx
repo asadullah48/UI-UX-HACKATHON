@@ -66,7 +66,7 @@ const Details = () => {
               <FaStar className="text-yellow-300" />
               <FaStar className="text-yellow-300" />
               <FaStarHalf className="text-yellow-300" />
-              aria-label= Rating;
+              aria-label= "Rating;
             </button>
             <button
               className="border-l-2 hidden sm:block"

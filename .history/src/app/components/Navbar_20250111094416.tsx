@@ -74,7 +74,7 @@ const Navbar = () => {
           <FiSearch className="cursor-pointer" />
           <FaRegHeart className="cursor-pointer" />
           <button onClick={() => setIsCartOpen(!isCartOpen)}>
-          aria-label
+            
             <IoCartOutline className="cursor-pointer" />
           </button>
           <div

@@ -202,7 +202,7 @@ const shop = () => {
                     src={product.image}
                     alt={product.name}
                     width={200}
-                    height={200}
+                    height={}
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">

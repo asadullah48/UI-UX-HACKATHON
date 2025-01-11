@@ -187,7 +187,7 @@ const Home = () => {
               src={"/pic8.png"}
               alt="pic8"
               width={1200}
-              height={1200}
+              height={}
               className="w-full  object-cover"
             />
           </div>

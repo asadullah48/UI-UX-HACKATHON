@@ -93,7 +93,7 @@ const Home = () => {
               src="/pic2.png"
               alt="Side Table 1"
               width={605}
-              height={562}
+              height={}
               className="w-full mr-10 max-w-[80%] sm:max-w-full cursor-pointer transition-transform hover:scale-105"
             />
             <div className="mt-4  lg:mt-6 text-center lg:text-left">
@@ -186,8 +186,8 @@ const Home = () => {
             <Image
               src={"/pic8.png"}
               alt="pic8"
-              width={1200}
-              height={1200}
+              width={983}
+              height={799}
               className="w-full  object-cover"
             />
           </div>

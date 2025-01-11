@@ -186,8 +186,8 @@ const Home = () => {
             <Image
               src={"/pic8.png"}
               alt="pic8"
-              width={1200}
-              height={1200}
+              width={}
+              height={799}
               className="w-full  object-cover"
             />
           </div>
