@@ -8,7 +8,7 @@
 //   module.exports = nextConfig;
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// const nextConfig = {}
 
 // module.exports = nextConfig
 
@@ -21,5 +21,13 @@ const nextConfig = {}
 
 
 // const nextConfig = {};
+
+// export default nextConfig;
+
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+};
 
 export default nextConfig;

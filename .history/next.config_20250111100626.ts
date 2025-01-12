@@ -8,7 +8,7 @@
 //   module.exports = nextConfig;
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// const nextConfig = {}
 
 // module.exports = nextConfig
 
@@ -20,6 +20,6 @@ const nextConfig = {}
 /** @type {import('next').NextConfig} */
 
 
-// const nextConfig = {};
+const nextConfig = {};
 
 export default nextConfig;

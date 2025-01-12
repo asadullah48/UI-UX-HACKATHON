@@ -10,7 +10,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
 
-// module.exports = nextConfig
+module.exports = nextConfig
 
 // module.exports = {
 //   eslint: {
@@ -20,6 +20,6 @@ const nextConfig = {}
 /** @type {import('next').NextConfig} */
 
 
-// const nextConfig = {};
+const nextConfig = {};
 
 export default nextConfig;
