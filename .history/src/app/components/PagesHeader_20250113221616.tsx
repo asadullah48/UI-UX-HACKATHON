@@ -5,7 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import Link from "next/link";
-import Logo from "../../../public/Images/shop logo.png"
+import Logo from "../public/Images/logo.png"
 import {
   Sheet,
   SheetContent,

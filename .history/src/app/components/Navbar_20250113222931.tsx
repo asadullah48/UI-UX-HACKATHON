@@ -1,10 +1,12 @@
-"use client"
+"use client";
+import Link from "next/link";
 import Image from "next/image";
+import { BsCart3 } from "react-icons/bs";
+
+
 import { TbUserExclamation } from "react-icons/tb";
 import { IoSearchOutline } from "react-icons/io5";
-import { GoHeart } from "react-icons/go";
-import { BsCart3 } from "react-icons/bs";
-import Link from "next/link";
+
 import Logo from "../../../public/Images/shop logo.png"
 import {
   Sheet,
@@ -14,12 +16,13 @@ import {
 
 import { Menu } from "lucide-react";
 
-const PagesHeader = () => {
-   
-    return (
-      <>
+const Navbar = () => {
+
+
+  return (
+    <>
       {/* Header Container */}
-      <div className="absolute w-full h-[100px] left-0 top-0 p-4 bg-white z-50 flex justify-end">
+      <div className="absolute w-full h-[100px] left-0 top-0 p-4 bg-[#FBEBB5] z-50 flex justify-end">
   {/* Logo */}
   <div className="absolute left-0 md:left-4 md:top-4 top-0 flex items-center">
     <Image src={Logo} alt="Logo"  />
@@ -71,24 +74,23 @@ const PagesHeader = () => {
     {/* Menu Content */}
     <SheetContent>
       {/* Carts Section */}
-      <div className="w-7 h-7">
-          <Link href="/">
-            <TbUserExclamation size={30} />
-          </Link>
-        </div>
-      <div className="w-7 h-7">
-          <IoSearchOutline size={30} />
-        </div>
-        
-        <div className="w-7 h-7">
-          <GoHeart size={30} />
-        </div>
-        <div className="flex flex-row space-x-5 mt-6">
+      <div className="flex flex-row space-x-5 mt-6">
         <Link href="/cart">
           <div className="w-[28px] h-[28px]">
             <BsCart3 size={30} />
           </div>
         </Link>
+        <div className="w-7 h-7">
+          <GoHeart size={30} />
+        </div>
+        <div className="w-7 h-7">
+          <IoSearchOutline size={30} />
+        </div>
+        <div className="w-7 h-7">
+          <Link href="/">
+            <TbUserExclamation size={30} />
+          </Link>
+        </div>
       </div>
 
       {/* Navigation Links */}
@@ -113,7 +115,9 @@ const PagesHeader = () => {
         </div>
 
       </div>
-      </>
-  )
-}
-export default PagesHeader;
+    </>
+  );
+};
+
+export default Navbar;
+

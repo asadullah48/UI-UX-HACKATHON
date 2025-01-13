@@ -14,14 +14,14 @@ import Group36 from "../../../public/Images/Group 36.png"
 import Group35 from "../../../public/Images/Group 35.png"
 import Group43 from "../../../public/Images/Group 43.png"
 import Link from 'next/link'
+import HomeHeader from './Navbar';
 import HeroImage from "../../../public/Images/Rocket single seater 1.png"
-import Navbar from './Navbar';
 
 const HomePage = () => {
 
   return (
     <>
-      <Navbar />
+      <Na />
       <div className="bg-[#FBEBB5] w-full h-auto md:h-[1000px] flex flex-col md:flex-row pt-[150px] md:pt-[300px] px-4 md:px-[132px] relative">
         {/* Text Section */}
         <div className="relative w-full sm:w-[440px] h-auto sm:h-[276px] px-4 sm:px-0">
