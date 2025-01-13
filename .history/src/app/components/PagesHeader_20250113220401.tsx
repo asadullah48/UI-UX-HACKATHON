@@ -71,15 +71,16 @@ const PagesHeader = () => {
     {/* Menu Content */}
     <SheetContent>
       {/* Carts Section */}
-      <div className="w-7 h-7">
+      
+        
+        <div className="w-7 h-7">
+          <IoSearchOutline size={30} />
+        </div>
+        <div className="w-7 h-7">
           <Link href="/">
             <TbUserExclamation size={30} />
           </Link>
         </div>
-      <div className="w-7 h-7">
-          <IoSearchOutline size={30} />
-        </div>
-        
         <div className="w-7 h-7">
           <GoHeart size={30} />
         </div>

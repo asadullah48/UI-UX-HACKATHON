@@ -10,7 +10,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "../../components/ui/sheet";
+} from "../components/";
 
 import { Menu } from "lucide-react";
 
@@ -71,24 +71,23 @@ const PagesHeader = () => {
     {/* Menu Content */}
     <SheetContent>
       {/* Carts Section */}
-      <div className="w-7 h-7">
-          <Link href="/">
-            <TbUserExclamation size={30} />
-          </Link>
-        </div>
-      <div className="w-7 h-7">
-          <IoSearchOutline size={30} />
-        </div>
-        
-        <div className="w-7 h-7">
-          <GoHeart size={30} />
-        </div>
-        <div className="flex flex-row space-x-5 mt-6">
+      <div className="flex flex-row space-x-5 mt-6">
         <Link href="/cart">
           <div className="w-[28px] h-[28px]">
             <BsCart3 size={30} />
           </div>
         </Link>
+        <div className="w-7 h-7">
+          <GoHeart size={30} />
+        </div>
+        <div className="w-7 h-7">
+          <IoSearchOutline size={30} />
+        </div>
+        <div className="w-7 h-7">
+          <Link href="/">
+            <TbUserExclamation size={30} />
+          </Link>
+        </div>
       </div>
 
       {/* Navigation Links */}

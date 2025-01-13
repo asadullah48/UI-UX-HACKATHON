@@ -76,7 +76,9 @@ const PagesHeader = () => {
             <TbUserExclamation size={30} />
           </Link>
         </div>
-      <div className="w-7 h-7">
+      
+        
+        <div className="w-7 h-7">
           <IoSearchOutline size={30} />
         </div>
         
