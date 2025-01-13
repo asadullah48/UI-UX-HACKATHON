@@ -40,7 +40,7 @@ const PagesHeader = () => {
     </div>
     <div className="w-7 h-7">
       <Link href="/">
-        <BsCart3 size={30} />
+        <TbUserExclamation size={30} />
       </Link>
     </div>
   </div>

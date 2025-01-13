@@ -29,18 +29,18 @@ const PagesHeader = () => {
   <div className="hidden absolute md:flex md:space-x-8 md:right-8 md:top-[36px]">
     <Link href="/cart">
       <div className="w-[28px] h-[28px]">
-        <TbUserExclamation size={30} />
+        <T
       </div>
     </Link>
-    <div className="w-7 h-7">
-      <IoSearchOutline size={30} />
-    </div>
     <div className="w-7 h-7">
       <GoHeart size={30} />
     </div>
     <div className="w-7 h-7">
+      <IoSearchOutline size={30} />
+    </div>
+    <div className="w-7 h-7">
       <Link href="/">
-        <BsCart3 size={30} />
+        <TbUserExclamation size={30} />
       </Link>
     </div>
   </div>

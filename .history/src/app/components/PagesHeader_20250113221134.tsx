@@ -36,11 +36,11 @@ const PagesHeader = () => {
       <IoSearchOutline size={30} />
     </div>
     <div className="w-7 h-7">
-      <GoHeart size={30} />
+      <IoSearchOutline size={30} />
     </div>
     <div className="w-7 h-7">
       <Link href="/">
-        <BsCart3 size={30} />
+        <TbUserExclamation size={30} />
       </Link>
     </div>
   </div>
