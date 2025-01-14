@@ -12,7 +12,7 @@ export default function HomePage() {
       <HeroSection/>
       <TableSection/>
       <TopPicks/>
-      <NewArrivals/>
+      <NewArrrivals/>
       <Blog/>
       <FollowUs/>
     </main>
