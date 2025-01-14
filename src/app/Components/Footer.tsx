@@ -1,67 +1,153 @@
-import Link from 'next/link';
-import React from 'react';
+// import Link from "next/link";
+// import React from "react";
+
+// const Footer = () => {
+//   return (
+//     <footer className=" px-8 py-5 w-full h-[419px] font-[poppins] select-none">
+//       <div className="flex justify-center gap-28 py-16 px-8 ">
+//         <div className="mt-20 mr-9">
+//           <span className="text-gray-400 text-sm font-light">
+//             400 University Drive Suite 200 Coral <br />
+//             spaGables, <br />
+//             FL 33134 USA
+//           </span>
+//         </div>
+//         <div className="font-medium ">
+//           <ul className="space-y-9">
+//             <li className="text-gray-400">Link</li>
+//             <li>
+//               <Link href={"/"}>Home</Link>
+//             </li>
+//             <li>
+//               <Link href={"/"}>Shop</Link>
+//             </li>
+//             <li>
+//               <Link href={"/"}>About</Link>
+//             </li>
+//             <li>
+//               <Link href={"/"}>Contact</Link>
+//             </li>
+//           </ul>
+//         </div>
+//         <div className="font-medium">
+//           <ul className="space-y-9">
+//             <span className="text-gray-400">Help</span>
+//             <li>
+//               <Link href={"/"}>Payment Options</Link>
+//             </li>
+//             <li>
+//               <Link href={"/"}>Returns</Link>
+//             </li>
+//             <li>
+//               <Link href={"/"}>Privacy Policies</Link>
+//             </li>
+//           </ul>
+//         </div>
+//         <div className=" font-medium space-y-9">
+//           <span className="text-gray-400">Newsletter</span>
+//           <form className="flex items-center space-x-4 mr-14">
+//             <input
+//               type="email"
+//               placeholder="Enter Your Email Address"
+//               className="font-light border-b-[1.5px] border-black focus:outline-none px-1"
+//             />
+
+//             <button
+//               type="submit"
+//               className="px-4 py-2 text-black hover:text-gray-500 border-b-[1.5px] border-black mb-[15px]"
+//             >
+//               SUBSCRIBE
+              
+//             </button>
+//           </form>
+//         </div>
+//       </div>
+//       <div className=" border-b-[1.5px] border-gray-300 px-32 xl:w-full mt-3 group-hover:text-gray-500"></div>
+//       <p className="w-80 py-6">2022 Meuble House. All rights reserved.</p>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
+
+import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   return (
-    <>
-    <div className="relative w-full bg-white h-auto px-4 py-10 sm:py-8 mt-[70px]">
-    <div className="flex flex-wrap justify-between items-start max-w-[1240px] mx-auto gap-6">
-      {/* Address Section */}
-      <div className="w-full sm:w-[285px] text-[#9F9F9F] Poppins text-[16px] leading-[24px] font-normal">
-        <p>
-          400 University Drive Suite 200 Coral Gables, FL 33134 USA
-        </p>
-      </div>
+    <footer className="px-28 py-11 w-full font-[poppins] select-none">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  py-12">
+        {/* Address Section */}
+        <div className="text-gray-400 text-sm font-light mt-24 mr-8">
+          <p>
+            400 University Drive Suite 200 Coral <br />
+            spaGables, <br />
+            FL 33134 USA
+          </p>
+        </div>
 
-      {/* Links and Help Section */}
-      <div className="flex flex-wrap justify-around w-full sm:w-auto gap-10 sm:gap-16">
-        {/* Help */}
-        <div className="flex flex-col">
-          <h3 className="text-[#9F9F9F] font-medium text-[16px] leading-[24px] mb-9">Help</h3>
-          <ul className="flex flex-col gap-6 Poppins font-medium text-[16px]">
-            <Link href="/"><li>Home</li></Link>
-            <Link href="/shop"><li>Shop</li></Link>
-            <Link href="/about"><li>About</li></Link>
-            <Link href="/contact"><li>Contact</li></Link>
+        {/* Links Section */}
+        <div className="font-medium">
+          <ul className="space-y-9">
+            <li className="text-gray-400">Link</li>
+            <li>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Shop</Link>
+            </li>
+            <li>
+              <Link href={"/"}>About</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Contact</Link>
+            </li>
           </ul>
         </div>
 
-        {/* Links */}
-        <div className="flex flex-col">
-          <h3 className="text-[#9F9F9F] font-medium text-[16px] leading-[24px] mb-9">Links</h3>
-          <ul className="flex flex-col gap-6 Poppins font-medium text-[16px]">
-            <li>Payment Options</li>
-            <li>Returns</li>
-            <li>Privacy Policies</li>
+        {/* Help Section */}
+        <div className="font-medium">
+          <ul className="space-y-9">
+            <span className="text-gray-400">Help</span>
+            <li>
+              <Link href={"/"}>Payment Options</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Returns</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Privacy Policies</Link>
+            </li>
           </ul>
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="font-medium">
+          <span className="text-gray-400">Newsletter</span>
+          <form className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4 mt-4">
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              className="w-full md:w-auto border-b-[1.5px] border-black focus:outline-none pb-4"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 text-black hover:text-gray-500 border-b-[1.5px] border-black"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
       </div>
 
-      {/* Newsletter Section */}
-      <div className="w-full sm:w-[286px]">
-        <h3 className="text-[#9F9F9F] font-medium text-[16px] leading-[24px] mb-4">Newsletter</h3>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-          className="flex-1 border-b border-black focus:outline-none focus:border-blue-500 text-[16px] px-1 py-2 placeholder-gray-400"
-        />
+      {/* Divider */}
+      <div className="border-b-[1.5px] border-gray-300 mt-5"></div>
 
-        {/* Subscribe Button */}
-        <button className=" py-2 text-black font-medium m-1 transition  border-b border-black">
-          Subscribe
-        </button>
-      </div>
-    </div>
-
-    {/* Footer Bottom Line */}
-    <div className="mt-8 border-t border-gray-300 pt-4">
-      <p className="sm:text-center md:px-8 md:text-left text-[#000000] Poppins text-[16px] leading-[24px] font-normal">
-        2022 Meubel House. All rights reserved.
+      {/* Footer Bottom Text */}
+      <p className=" text-sm text-gray-800  mt-4">
+        2022 Meuble House. All rights reserved.
       </p>
-    </div>
-  </div>
-  </>
+    </footer>
   );
 };
 

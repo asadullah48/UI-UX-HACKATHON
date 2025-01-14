@@ -1,12 +1,20 @@
-import React from 'react'
-import HomePage from './components/HomePage';
+import Blog from "./Components/Blog";
+import HeroSection from "./Components/HeroSection";
+import NewArrrivals from "./Components/NewArrrivals";
+import TableSection from "./Components/TableSection";
+import TopPicks from "./Components/TopPicks";
+import FollowUs from "./Components/FollowUs";
 
-export default function Home() {
+
+export default function HomePage() {
   return (
-   <>
-
- <HomePage />
- 
-   </>
+    <main>
+      <HeroSection/>
+      <TableSection/>
+      <TopPicks/>
+      <NewArrrivals/>
+      <Blog/>
+      <FollowUs/>
+    </main>
   );
 }
