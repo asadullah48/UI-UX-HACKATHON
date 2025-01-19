@@ -32,7 +32,7 @@ const Header = () => {
             <Link href={"/"} className="hover:text-slate-600">
               Home
             </Link>
-            <span className=""></span>
+            <spa className=
           </li>
           <li className="relative group">
             <Link href={"/"} className="hover:text-slate-600">

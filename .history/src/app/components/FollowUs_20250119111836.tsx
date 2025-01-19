@@ -1,4 +1,4 @@
-import React from "react"
+im
 const FollowUs = () => {
   return (
     <div className="flex justify-center bg-[url('/topPics/Rectangle.png')] bg-cover w-full h-96 sm:h-72 md:h-80 lg:h-96 xl:h-[500px]">

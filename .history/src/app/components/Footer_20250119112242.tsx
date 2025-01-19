@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="px-4 sm:px-6 md:px-12 lg:px-28 py-11 w-full font-[poppins] select-none">
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
         {/* Address Section */}
-        <div className="text-gray-400 text-sm font-light mt-8 sm:mt-24 mr-0 sm:mr-8">
+        <div className="">
           <p>
             400 University Drive Suite 200 Coral <br />
             spaGables, <br />
@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* Links Section */}
         <div className="font-medium">
-          <ul className="space-y-4 sm:space-y-9">
+          <ul className="space-y-9">
             <li className="text-gray-400">Link</li>
             <li>
               <Link href={"/"}>Home</Link>
@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* Help Section */}
         <div className="font-medium">
-          <ul className="space-y-4 sm:space-y-9">
+          <ul className="space-y-9">
             <span className="text-gray-400">Help</span>
             <li>
               <Link href={"/"}>Payment Options</Link>

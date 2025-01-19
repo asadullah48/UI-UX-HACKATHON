@@ -1,5 +1,4 @@
-import React from "react"
-const FollowUs = () => {
+\const FollowUs = () => {
   return (
     <div className="flex justify-center bg-[url('/topPics/Rectangle.png')] bg-cover w-full h-96 sm:h-72 md:h-80 lg:h-96 xl:h-[500px]">
       <div className="flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 lg:px-16">

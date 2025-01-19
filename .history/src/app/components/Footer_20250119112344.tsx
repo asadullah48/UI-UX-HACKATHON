@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* Help Section */}
         <div className="font-medium">
-          <ul className="space-y-4 sm:space-y-9">
+          <ul className="">
             <span className="text-gray-400">Help</span>
             <li>
               <Link href={"/"}>Payment Options</Link>

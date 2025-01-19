@@ -23,16 +23,16 @@ const Header = () => {
       style={{ backgroundColor: isHomepage ? "#FBEBB5" : "white" }}
     >
       <nav
-        className={`absolute top-[100px] left-0 w-full bg-white shadow-lg md:static md:bg-transparent md:shadow-none md:flex md:flex-1 md:justify-center ${
+        className={${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col md:flex-row items-center text-[16px] font-[poppins] ml-4 sm:ml-8 md:ml-28 font-medium md:gap-[20px] lg:gap-[40px]">
+        <ul className="flex flex-col md:flex-row items-center text-[16px] font-[poppins] ml-28  font-medium md:gap-[40px]">
           <li className="relative group">
             <Link href={"/"} className="hover:text-slate-600">
               Home
             </Link>
-            <span className=""></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="relative group">
             <Link href={"/"} className="hover:text-slate-600">

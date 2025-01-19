@@ -67,7 +67,7 @@ const Blog = () => {
               width={400}
               height={300}
               layout="responsive"
-              objectFit="cover"
+              object
               className="w-full object-cover"
             />
 

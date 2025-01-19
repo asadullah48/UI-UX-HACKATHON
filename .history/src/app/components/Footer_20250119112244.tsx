@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* Links Section */}
         <div className="font-medium">
-          <ul className="space-y-4 sm:space-y-9">
+          <ul className="space-y-9">
             <li className="text-gray-400">Link</li>
             <li>
               <Link href={"/"}>Home</Link>
@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* Help Section */}
         <div className="font-medium">
-          <ul className="space-y-4 sm:space-y-9">
+          <ul className="space-y-9">
             <span className="text-gray-400">Help</span>
             <li>
               <Link href={"/"}>Payment Options</Link>

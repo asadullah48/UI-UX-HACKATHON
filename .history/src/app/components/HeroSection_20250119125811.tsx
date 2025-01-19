@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col sm:flex-row items-center  max-w-full h-screen px-8 md:px-48 bg-[#FBEBB5] select-none">
+    <section className="relative flex flex-col sm items-center  max-w-full h-screen px-8 md:px-48 bg-[#FBEBB5] select-none">
         {/* Text Section */}
         <div className="relative w-full sm:w-[440px] h-auto sm:h-[276px] px-4 sm:px-0">
           <h3 className="text-black font-medium Poppins text-[28px] sm:text-[36px] md:text-[64px] leading-[34px] sm:leading-[42px] md:leading-[96px]">

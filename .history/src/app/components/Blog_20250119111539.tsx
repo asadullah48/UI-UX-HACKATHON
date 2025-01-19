@@ -65,9 +65,7 @@ const Blog = () => {
               src={list.img}
               alt={list.name}
               width={400}
-              height={300}
-              layout="responsive"
-              objectFit="cover"
+              height={300}]
               className="w-full object-cover"
             />
 
