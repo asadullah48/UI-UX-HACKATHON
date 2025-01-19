@@ -28,8 +28,8 @@ const TableSection = () => {
         <Image
           src="/sideTable/Cloud sofa.png"
           alt="cloud sofa"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
          
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
