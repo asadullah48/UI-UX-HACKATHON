@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className=" bg-[#FBEBB5] max-w-full mx-auto h-screen relative flex flex-col sm:flex-row items-center sm:justify-between px-8 md:px-40 ">
+    <section className=" bg-[#FBEBB5] max-w-full mx-auto h-screen relative flex flex-col sm:flex-row items-center sm:justify-between px-8 md:px-40 select-none">
     sm:flex-row items-center 
       {/* Text Section */}
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:w-1/2">
