@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section className=" bg-[#FBEBB5] max-w-full mx-auto h-screen relative flex flex-col sm:flex-row items-center sm:justify-between px-8 md:px-48">
     sm:flex-row items-center 
       {/* Text Section */}
-      <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:w-1/2">
+      <div className="">
         <h3 className="text-[24px] sm:text-[36px] lg:text-[64px] font-medium Poppins leading-[1.2]">
           Rocket single seater
         </h3>
