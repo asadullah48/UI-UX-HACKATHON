@@ -6,10 +6,10 @@ const HeroSection = () => {
     
       {/* Text Section */}
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:w-1/2">
-        <h3 className="text-[24px] sm:text-[36px] lg:text-[64px] font-medium Poppins leading-[1.2]">
+        <h3 className="text-[24px] sm:text-[36px] lg:text-[64px] font-medium leading-[1.2]">
           Rocket single seater
         </h3>
-        <h2 className="mt-4 text-[16px] sm:text-[20px] lg:text-[24px] font-medium Poppins text-black bg-yellow-500 px-6 py-2 rounded-md transition-transform hover:scale-105">
+        <h2 className="mt-4 sm:text-[20px] lg:text-[24px] font-medium text-black bg-yellow-500 px-6 py-2 rounded-md transition-transform hover:scale-105">
           Shop Now
         </h2>
         <hr className="mt-2 sm:mt-4 w-[60px] sm:w-[121px] border-1.5 border-black" />
