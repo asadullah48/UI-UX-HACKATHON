@@ -4,14 +4,15 @@ import React from "react";
 
 const TableSection = () => {
   return (
-    <section className="flex flex-col md:flex-row bg-[#F4F4F4] justify-around mx-auto p-10">
+    <section className="flex flex-col lg:flex-row justify-between bg-[#FAF4F4] px-4 md:px-8 lg:px-16 py-4 w-full md:h-auto">
       <div className="flex flex-col items-center lg:items-start mt-4 w-full lg:w-1/2">
         <Image
           src="/sideTable/side table.png"
           alt="side table"
-          width={300}
-          height={300}
-          
+          width={650}
+          height={650}
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">
@@ -28,9 +29,10 @@ const TableSection = () => {
         <Image
           src="/sideTable/Cloud sofa.png"
           alt="cloud sofa"
-          width={300}
+          width={6}
           height={300}
-         
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">

@@ -11,7 +11,8 @@ const TableSection = () => {
           alt="side table"
           width={300}
           height={300}
-          
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">
@@ -30,14 +31,15 @@ const TableSection = () => {
           alt="cloud sofa"
           width={300}
           height={300}
-         
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">
           Cloud Sofa
         </h3>
         <button className="mt-2">
-          <Link href="/" className="text-[3vw] lg:text-[1.5vw] font-medium font-[poppins] border-b-2 border-black py-1">
+          <Link href="/" className="py-3  px-8 border-black border-2">
             View More
           </Link>
         </button>

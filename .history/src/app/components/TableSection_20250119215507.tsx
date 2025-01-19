@@ -9,16 +9,17 @@ const TableSection = () => {
         <Image
           src="/sideTable/side table.png"
           alt="side table"
-          width={300}
-          height={300}
-          
+          width={500}
+          height={500}
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
-        <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">
+        <h3 className="text-3xl font-medium">
           Side Table
         </h3>
         <button className="mt-2">
-          <Link href="/" className="text-[3vw] lg:text-[1.5vw] font-medium font-[poppins] border-b-2 border-black py-1">
+          <Link href="/" className="text-xl mt-8 underline underline-offset-8 text-black-600 ">
             View More
           </Link>
         </button>
@@ -28,9 +29,10 @@ const TableSection = () => {
         <Image
           src="/sideTable/Cloud sofa.png"
           alt="cloud sofa"
-          width={300}
-          height={300}
-         
+          width={500}
+          height={500}
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">

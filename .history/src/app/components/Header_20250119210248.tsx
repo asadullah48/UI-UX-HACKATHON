@@ -19,7 +19,7 @@ const Header = () => {
   };
   return (
     <header
-      className="flex justify-center items-x-4 sm:px-6 md:px-16 select-none"
+      className="absolute w-full h-[100px] left-0 top-0 p-4 bg-[#FBEBB5] z-50 flex justify-end"
       style={{ backgroundColor: isHomepage ? "#FBEBB5" : "white" }}
     >
       <nav
