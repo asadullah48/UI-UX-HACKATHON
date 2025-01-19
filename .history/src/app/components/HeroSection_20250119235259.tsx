@@ -19,7 +19,7 @@ const HeroSection = () => {
           src={"/hero/Rocket single seater.png"}
           alt="Rocket single seater"
           width={803}
-          height={803}
+          height={}
           
           className="w-[80%] sm:w-[70%] lg:w-[100%] object-cover"
         />
