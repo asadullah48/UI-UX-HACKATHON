@@ -12,7 +12,7 @@ const TableSection = () => {
           width={300}
           height={300}
           layout="responsive"
-          objectFit="cover"
+          objectFit="contain"
           className="w-full h-auto lg:w-[450px] lg:h-[450px]"
         />
         <h3 className="font-medium text-[4vw] lg:text-[2vw] font-[poppins] text-center lg:text-left mt-4">

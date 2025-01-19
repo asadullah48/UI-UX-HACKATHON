@@ -21,7 +21,7 @@ const HeroSection = () => {
           width={600}
           height={600}
           layout="intrinsic"
-          objectFit="contain"
+          objectFit="c"
           className="w-full sm:w-[400px md:w-{853px] md:h-[900]"
         />
       </div>

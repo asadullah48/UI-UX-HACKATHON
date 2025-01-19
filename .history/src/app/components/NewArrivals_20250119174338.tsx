@@ -13,7 +13,7 @@ const NewArrivals = () => {
           width={750}
           height={750}
           layout="intrinsic"
-          objectFit="contain"
+          objectFit=""
           className="w-full sm:w-auto"
         />
       </div>

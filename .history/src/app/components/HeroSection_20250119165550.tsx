@@ -20,8 +20,7 @@ const HeroSection = () => {
           alt="Rocket single seater"
           width={600}
           height={600}
-          layout="intrinsic"
-          objectFit="contain"
+          object
           className="w-full sm:w-[400px md:w-{853px] md:h-[900]"
         />
       </div>
