@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className=" bg-[#FBEBB5] max-w-full mx-auto relative flex flex-col sm:flex-row items-center sm:justify-between px-8 md:px-48">
+    <section className=" bg-[#FBEBB5] max-w-full mx-auto relative flex flex-col sm:flex-row items-center sm:justify-between px-8 md:px-4">
     sm:flex-row items-center 
       {/* Text Section */}
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:w-1/2">
@@ -18,7 +18,7 @@ const HeroSection = () => {
         <Image
           src={"/hero/Rocket single seater.png"}
           alt="Rocket single seater"
-          width={803}
+          width={900}
           height={1000}
           
           className="w-[80%] sm:w-[70%] lg:w-[100%] object-cover"
