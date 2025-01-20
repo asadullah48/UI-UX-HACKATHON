@@ -4,16 +4,15 @@ import React from "react";
 
 const NewArrivals = () => {
   return (
-    <section className="relative flex flex-wrap justify-end items-center w-full min-h-screen px-8 py-16 bg-[#FFF9E5]">
+    <section className="flex items-center justify-between px-8 py-16" style={{ background: '#FFF9E5' }}">
       {/* Left Image */}
       <div className="absolute -top-20 sm:top-0 left-0 sm:-left-20 md:-left-40 lg:-left-52 w-full h-full md:h-screen flex justify-center items-center">
         <Image
           src={"/topPics/Asgaard sofa.png"}
           alt="Asgaard sofa"
-          width={900}
-          height={799}
-          layout="intrinsic"
-          objectFit="contain"
+          width={750}
+          height={750}
+      
           className="w-full sm:w-auto"
         />
       </div>

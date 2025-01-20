@@ -10,8 +10,8 @@ const NewArrivals = () => {
         <Image
           src={"/topPics/Asgaard sofa.png"}
           alt="Asgaard sofa"
-          width={900}
-          height={799}
+          width={750}
+          height={750}
           layout="intrinsic"
           objectFit="contain"
           className="w-full sm:w-auto"
