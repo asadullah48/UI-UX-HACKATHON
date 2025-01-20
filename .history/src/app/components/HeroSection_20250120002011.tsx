@@ -21,7 +21,7 @@ const HeroSection = () => {
           width={803}
           height={1000}
           
-          className="w-full sm:w-[400px] md:w-[853px] md:h-[900px]"
+          className="w-[80%] sm:w-[70%] lg:w-[100%] object-cover"
         />
       </div>
     </section>

@@ -14,14 +14,14 @@ const HeroSection = () => {
         </h2>
         <hr className="mt-2 sm:mt-4 w-[60px] sm:w-[121px] border-1.5 border-black" />
       </div>
-      <div className="mt-8 sm:mt-0 sm:w-1/2 flex justify-center">
+      <div className="justify-center">
         <Image
           src={"/hero/Rocket single seater.png"}
           alt="Rocket single seater"
           width={803}
           height={1000}
           
-          className="w-full sm:w-[400px] md:w-[853px] md:h-[900px]"
+          className="w-[80%] sm:w-[70%] lg:w-[100%] object-cover"
         />
       </div>
     </section>
