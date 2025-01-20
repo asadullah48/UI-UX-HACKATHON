@@ -12,7 +12,7 @@ const NewArrivals = () => {
           alt="Asgaard sofa"
           width={900}
           height={799}
-          layout="responsive"
+          layout="Responsive"
           objectFit="cover"
           className="w-full sm:w-auto"
         />
