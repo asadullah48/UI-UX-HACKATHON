@@ -12,7 +12,8 @@ const NewArrivals = () => {
           alt="Asgaard sofa"
           width={900}
           height={799}
-        
+          layout="intrinsic"
+          objectFit="contain"
           className="w-full sm:w-auto"
         />
       </div>
