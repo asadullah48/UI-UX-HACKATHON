@@ -9,7 +9,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-snug">
           Rocket single seater
         </h1>
-        <h2 className="inline-block text-black font-medium underline hover:no-underline hover:text-gray-800 transition">
+        <h2 className="mt-4 sm:mt-4 text-black font-medium Poppins transform transition-transform duration-300 cursor-pointer hover:scale-105 text-[16px] sm:text-[24px] leading-[20px] sm:leading-[36px]">
           Shop Now
         </h2>
         <hr className="mt-2 sm:mt-4 w-[60px] sm:w-[121px] border-1.5 border-black" />
