@@ -12,7 +12,7 @@ const geistSans = localFont({
   display: "swap",
   preload: true
 });
-
+});
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
