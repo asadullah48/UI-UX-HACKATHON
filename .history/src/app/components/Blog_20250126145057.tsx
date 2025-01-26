@@ -9,7 +9,7 @@ const Blog = () => {
     name: string;
     url: string;
     logo: string;
-    logo2: string;
+    logo2: LuCalendar;
     time: string;
     date: string;
     img: string;

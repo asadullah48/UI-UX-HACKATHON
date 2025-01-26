@@ -8,8 +8,8 @@ const Blog = () => {
   interface BlogList {
     name: string;
     url: string;
-    logo: string;
-    logo2: string;
+    logo: ;
+    logo2: LuCalendar;
     time: string;
     date: string;
     img: string;
