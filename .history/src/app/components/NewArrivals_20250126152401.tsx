@@ -21,10 +21,12 @@ const NewArrivals = () => {
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium font-[poppins]">
           New Arrivals
         </h3>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-[poppins]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl 
+    font-bold 
+    mb-4font-[poppins] mb-4">
           Asgaard Sofa
         </h1>
-        <button className="border-[1.5px] border-black px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-normal font-[poppins] ">
+        <button className="border-[1.5px] border-black px-6 py-2 sm:px-8 sm:py-3 text-[16px] sm:text-[18px] font-normal font-[poppins] text-center">
           <Link href="/">Order Now</Link>
         </button>
       </div>

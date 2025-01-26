@@ -24,7 +24,10 @@ const NewArrivals = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-[poppins]">
           Asgaard Sofa
         </h1>
-        <button className="border-[1.5px] border-black px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-normal font-[poppins] ">
+        <button className="border-[1.5px] border-black 
+    px-6 py-2 sm:px-8 sm:py-3 
+    text-base sm:text-lg 
+    font-normal font-[poppins] ">
           <Link href="/">Order Now</Link>
         </button>
       </div>
