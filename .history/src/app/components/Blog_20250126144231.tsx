@@ -47,7 +47,7 @@ const Blog = () => {
     <section className="px-4 py-8 w-full min-h-screen bg-white select-none">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium font-[poppins]">
+        <h1 className="text-[24px] sm:text-[28px] md:text-[36px] font-medium font-[poppins]">
           Our Blogs
         </h1>
         <h5 className="text-[14px] sm:text-[16px] font-medium text-gray-500 font-[poppins]">
@@ -62,11 +62,12 @@ const Blog = () => {
             className="bg-white hover:shadow-md transition-transform ease-in-out hover:scale-105 duration-500 rounded-md overflow-hidden flex flex-col"
           >
             <Image
-             src={list.img} 
-             alt={list.name}
-             width={400}
-             height={300}
-             className="w-full h-auto object-cover"/>
+  src={list.img}
+  alt={list.name}
+  width={400}
+  height={300}
+  className="w-full h-auto object-cover"
+/>
 
             <div className="p-4 flex flex-col gap-2">
               <h3 className="text-[16px] font-light font-[poppins] text-gray-700">
@@ -74,7 +75,7 @@ const Blog = () => {
               </h3>
               <Link
                 href={list.url}
-                className="text-base sm:text-lg font-light text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+                className="text-[18px] text-center font-medium text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
               >
                 Read More
               </Link>

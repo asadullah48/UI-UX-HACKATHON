@@ -74,7 +74,7 @@ const Blog = () => {
               </h3>
               <Link
                 href={list.url}
-                className="text-base sm:text-lg font-light text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+                className=" text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
               >
                 Read More
               </Link>

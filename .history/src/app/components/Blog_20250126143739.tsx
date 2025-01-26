@@ -8,8 +8,8 @@ const Blog = () => {
   interface BlogList {
     name: string;
     url: string;
-    logo: IoMdTime;
-    logo2: LuCalendar;
+    logo: I;
+    logo2: string;
     time: string;
     date: string;
     img: string;
@@ -47,7 +47,7 @@ const Blog = () => {
     <section className="px-4 py-8 w-full min-h-screen bg-white select-none">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium font-[poppins]">
+        <h1 className="text-[24px] sm:text-[28px] md:text-[36px] font-medium font-[poppins]">
           Our Blogs
         </h1>
         <h5 className="text-[14px] sm:text-[16px] font-medium text-gray-500 font-[poppins]">
@@ -55,18 +55,21 @@ const Blog = () => {
         </h5>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 md:px-12 lg:px-16">
         {blog.map((list, index) => (
           <div
             key={index}
             className="bg-white hover:shadow-md transition-transform ease-in-out hover:scale-105 duration-500 rounded-md overflow-hidden flex flex-col"
           >
             <Image
-             src={list.img} 
-             alt={list.name}
-             width={400}
-             height={300}
-             className="w-full h-auto object-cover"/>
+              src={list.img}
+              alt={list.name}
+              width={400}
+              height={300}
+              layout="responsive"
+              objectFit="cover"
+              className="w-full object-cover"
+            />
 
             <div className="p-4 flex flex-col gap-2">
               <h3 className="text-[16px] font-light font-[poppins] text-gray-700">
@@ -74,7 +77,7 @@ const Blog = () => {
               </h3>
               <Link
                 href={list.url}
-                className="text-base sm:text-lg font-light text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+                className="text-[18px] text-center font-medium text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
               >
                 Read More
               </Link>

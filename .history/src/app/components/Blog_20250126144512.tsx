@@ -47,7 +47,7 @@ const Blog = () => {
     <section className="px-4 py-8 w-full min-h-screen bg-white select-none">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium font-[poppins]">
+        <h1 className=" font-[poppins]">
           Our Blogs
         </h1>
         <h5 className="text-[14px] sm:text-[16px] font-medium text-gray-500 font-[poppins]">
@@ -74,7 +74,7 @@ const Blog = () => {
               </h3>
               <Link
                 href={list.url}
-                className="text-base sm:text-lg font-light text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+                className="text-[18px] text-center font-medium text-black font-[poppins] border-b-2  border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
               >
                 Read More
               </Link>
