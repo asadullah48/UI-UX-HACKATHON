@@ -59,12 +59,11 @@ const Header = () => {
         <Link href={"/"} className="hover:text-slate-600">
           <TbUserExclamation />
         </Link>
-        
-        <Link href={"/"} className="hover:text-slate-600">
-          <FiSearch />
-        </Link>
         <Link href={"/"} className="hover:text-slate-600">
           <FaRegHeart />
+        </Link>
+        <Link href={"/"} className="hover:text-slate-600">
+          <FiSearch />
         </Link>
         <Link href={"/"} className="hover:text-slate-600">
           <AiOutlineShoppingCart />

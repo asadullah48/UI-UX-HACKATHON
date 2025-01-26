@@ -58,13 +58,11 @@ const Header = () => {
       <div className="relative flex items-center justify-end text-[25px] gap-6 sm:gap-11 md:gap-5 md:ml-16 font-[poppins]">
         <Link href={"/"} className="hover:text-slate-600">
           <TbUserExclamation />
-        </Link>
-        
-        <Link href={"/"} className="hover:text-slate-600">
-          <FiSearch />
-        </Link>
         <Link href={"/"} className="hover:text-slate-600">
           <FaRegHeart />
+        </Link>
+        <Link href={"/"} className="hover:text-slate-600">
+          <FiSearch />
         </Link>
         <Link href={"/"} className="hover:text-slate-600">
           <AiOutlineShoppingCart />
