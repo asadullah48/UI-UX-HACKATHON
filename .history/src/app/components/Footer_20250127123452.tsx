@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import React from "react";
-
+import NewsletterForm from './NewsletterForm';
 
 interface FooterLink {
   label: string;
@@ -78,7 +78,11 @@ const Footer = () => {
             </nav>
           </div>
 
-          
+          {/* Newsletter Section */}
+          <div className="order-4 lg:order-4">
+            <h2 className="text-gray-400 font-medium mb-6">Newsletter</h2>
+            <NewsletterForm />
+          </div>
         </div>
 
         {/* Footer Bottom */}

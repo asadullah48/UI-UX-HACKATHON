@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import React from "react";
-
+import NewsletterForm from "./NewsletterForm";
 
 interface FooterLink {
   label: string;
