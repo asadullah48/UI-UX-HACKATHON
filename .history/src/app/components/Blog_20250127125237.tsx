@@ -1,7 +1,3 @@
-// In the above code, we have created a  BlogCard  component that will render a single blog post. We have also created a  Blog  component that will render multiple blog posts using the  BlogCard  component. 
-  // Now, let’s create a new page for the blog posts. 
-  // Step 4: Create a Blog Page 
-  // Create a new file named  blog.tsx  inside the  pages  directory and add the following code:
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -129,5 +125,3 @@ const Blog: React.FC = () => {
 };
 
 export default Blog;
-  
-  
