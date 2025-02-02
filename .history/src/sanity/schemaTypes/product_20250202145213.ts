@@ -92,4 +92,4 @@ const product = {
     ],
   };
   
-  export default product;
+  export default productSchema;
