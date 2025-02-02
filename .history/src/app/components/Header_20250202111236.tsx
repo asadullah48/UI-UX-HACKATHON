@@ -22,11 +22,7 @@ const Header = () => {
       className="flex justify-center items-x-4 sm:px-6 md:px-16 select-none"
       style={{ backgroundColor: isHomepage ? "#FBEBB5" : "white" }}
     >
-      <nav
-  className={`fixed top-[100px] left-0 w-full bg-white shadow-lg md:static md:bg-transparent md:shadow-none md:flex md:flex-1 md:justify-center transition-all duration-300 ease-in-out ${
-    isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-  }`}
->
+      
         <ul className="flex flex-col md:flex-row items-center text-[16px] font-[poppins] ml-4 sm:ml-8 md:ml-28 font-medium md:gap-[20px] lg:gap-[40px]">
           <li className="relative group">
             <Link href={"/"} className="hover:text-slate-600">
@@ -74,7 +70,7 @@ const Header = () => {
           onClick={toggleMenu}
           className="text-2xl md:hidden"
           aria-label="Toggle Menu"
-          
+          aria-expanded={isMenuOpen}
         >
           <TiThMenu />\
         </button>

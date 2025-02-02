@@ -70,14 +70,7 @@ const Header = () => {
           <AiOutlineShoppingCart />
         </Link>
         {/* Hamburger Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="text-2xl md:hidden"
-          aria-label="Toggle Menu"
-          
-        >
-          <TiThMenu />\
-        </button>
+        
       </div>
     </header>
   );

@@ -23,7 +23,7 @@ const Header = () => {
       style={{ backgroundColor: isHomepage ? "#FBEBB5" : "white" }}
     >
       <nav
-  className={`fixed top-[100px] left-0 w-full bg-white shadow-lg md:static md:bg-transparent md:shadow-none md:flex md:flex-1 md:justify-center transition-all duration-300 ease-in-out ${
+  className={`absolute top-[100px] left-0 w-full bg-white shadow-lg md:static md:bg-transparent md:shadow-none md:flex md:flex-1 md:justify-center transition-all duration-300 ease-in-out ${
     isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
   }`}
 >
@@ -74,9 +74,8 @@ const Header = () => {
           onClick={toggleMenu}
           className="text-2xl md:hidden"
           aria-label="Toggle Menu"
-          
         >
-          <TiThMenu />\
+          <TiThMenu />
         </button>
       </div>
     </header>

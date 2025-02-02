@@ -74,9 +74,8 @@ const Header = () => {
           onClick={toggleMenu}
           className="text-2xl md:hidden"
           aria-label="Toggle Menu"
-          
         >
-          <TiThMenu />\
+
         </button>
       </div>
     </header>
