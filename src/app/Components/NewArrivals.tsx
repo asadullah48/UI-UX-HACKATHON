@@ -4,29 +4,32 @@ import React from "react";
 
 const NewArrivals = () => {
   return (
-    <section className="relative flex flex-col md:flex-row justify-center md:justify-end items-center min-h-screen -4 sm:px-8 py-16 bg-[#FFF9E5]">
+    <section className="relative flex flex-wrap justify-end items-center w-full min-h-screen bg-[#FFF9E5] overflow-hidden">
       {/* Left Image */}
-      <div className="absolute top-0 left-0 w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center">
+      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center sm:justify-start sm:items-start sm:left-[-10%] md:left-[-20%] lg:left-[-25%]">
         <Image
-          src={"/topPics/Asgaard sofa.png"}
+          src="/topPics/Asgaard sofa.png"
           alt="Asgaard sofa"
-          width={600}
-          height={500}
-          className="w-full  max-w-[500px] object-contain"
+          width={750}
+          height={750}
+          className="w-full sm:w-[120%] md:w-[110%] lg:w-[100%] h-auto object-contain"
+          priority // Optimize for above-the-fold images
         />
       </div>
 
       {/* Right Section */}
-      <div className="relative px-4 sm:px-8 md:px-16 mt-52 md:mt-0 text-center md:text-left z-10 md:w-1/2">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium font-[poppins]">
+      <div className="relative px-8 md:px-16 lg:px-20 mt-52 sm:mt-32 md:mt-40 lg:mt-48 flex flex-col justify-center items-center z-10">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium font-poppins text-center sm:text-left">
           New Arrivals
         </h3>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-[poppins]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-poppins mb-4 sm:mb-6 text-center sm:text-left">
           Asgaard Sofa
         </h1>
-        <button className="border-[1.5px] border-black px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-normal font-[poppins] ">
-          <Link href="/">Order Now</Link>
-        </button>
+        <Link href="/" passHref>
+          <button className="border-[1.5px] border-black px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-normal font-poppins text-center hover:bg-black hover:text-white transition-colors duration-300">
+            Order Now
+          </button>
+        </Link>
       </div>
     </section>
   );
