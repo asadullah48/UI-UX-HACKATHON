@@ -1,75 +1,22 @@
-import React from "react";
-import Link from "next/link";
-import { Instagram } from "lucide-react";
+import React from 'react';
 
-interface FollowUsProps {
-  instagramUrl?: string;
-}
-
-const FollowUs: React.FC<FollowUsProps> = ({ 
-  instagramUrl = "https://instagram.com" // default value
-}) => {
+const FollowUs = () => {
   return (
-    <section 
-      className="relative w-full min-h-[24rem] lg:min-h-[32rem] flex items-center justify-center overflow-hidden"
-      aria-labelledby="instagram-section-title"
-    >
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-[url('/topPics/Rectangle.png')] bg-cover bg-center bg-no-repeat"
-        aria-hidden="true"
-      >
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px]" />
+    <section className="flex justify-center bg-[url('/topPics/Rectangle.png')] bg-cover w-full h-96 sm:h-72 md:h-80 lg:h-96 xl:h-[500px]">
+      <div className="flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 lg:px-16">
+        <h1 className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-bold font-poppins text-primary">
+          Our Instagram
+        </h1>
+        <h2 className="text-[14px] sm:text-[16px] md:text-[20px] font-poppins font-normal text-gray-500 mt-2">
+          Follow our store on Instagram
+        </h2>
+        <button
+          aria-label="Follow us on Instagram"
+          className="text-[14px] sm:text-[16px] md:text-[20px] font-poppins font-normal border border-[#FAF4F4] bg-[#FAF4F4] text-black rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 px-8 sm:px-10 md:px-12 py-2 sm:py-3 mt-4 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
+        >
+          Follow Us
+        </button>
       </div>
-
-      {/* Content Container */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        {/* Main Content */}
-        <div className="space-y-6">
-          {/* Instagram Icon */}
-          <div className="flex justify-center">
-            <Instagram 
-              className="w-12 h-12 sm:w-16 sm:h-16 text-black animate-pulse" 
-              aria-hidden="true"
-            />
-          </div>
-
-          {/* Headings */}
-          <div className="space-y-4">
-            <h2 
-              id="instagram-section-title"
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-[poppins] text-black tracking-tight"
-            >
-              Our Instagram
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700 font-[poppins]">
-              Follow our store on Instagram for exclusive updates
-            </p>
-          </div>
-
-          {/* CTA Button */}
-          <div className="pt-4">
-            <Link
-              href={instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 sm:px-10 sm:py-4 
-                text-base sm:text-lg font-medium font-[poppins] text-black
-                bg-white/90 hover:bg-white 
-                border border-gray-200 hover:border-gray-300
-                rounded-full shadow-lg hover:shadow-xl
-                transform hover:-translate-y-0.5
-                transition-all duration-300 ease-out"
-            >
-              <span>Follow Us</span>
-              <Instagram className="w-5 h-5" aria-hidden="true" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none" aria-hidden="true" />
     </section>
   );
 };

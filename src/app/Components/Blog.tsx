@@ -1,133 +1,106 @@
-// In the above code, we have created a  BlogCard  component that will render a single blog post. We have also created a  Blog  component that will render multiple blog posts using the  BlogCard  component. 
-  // Now, let’s create a new page for the blog posts. 
-  // Step 4: Create a Blog Page 
-  // Create a new file named  blog.tsx  inside the  pages  directory and add the following code:
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoMdTime } from "react-icons/io";
 import { LuCalendar } from "react-icons/lu";
 
-interface BlogPost {
-  id: string;
-  title: string;
-  slug: string;
-  readTime: string;
-  publishDate: string;
-  imageSrc: string;
-  imageAlt: string;
+interface BlogList {
+  name: string;
+  url: string;
+  time: string;
+  date: string;
+  img: string;
 }
 
-const blogPosts: BlogPost[] = [
+const blog: BlogList[] = [
   {
-    id: "1",
-    title: "Going all-in with millennial design",
-    slug: "/blog/millennial-design",
-    readTime: "5 min",
-    publishDate: "12 Oct 2022",
-    imageSrc: "/blogs/Rectangle 13.png",
-    imageAlt: "Millennial design blog post cover",
+    name: "Going all-in with millennial design",
+    url: "Read More",
+    time: "5 min",
+    date: "12 Oct 2022",
+    img: "/blogs/Rectangle 13.png",
   },
   {
-    id: "2",
-    title: "Going all-in with millennial design",
-    slug: "/blog/millennial-design-2",
-    readTime: "5 min",
-    publishDate: "12 Oct 2022",
-    imageSrc: "/blogs/Rectangle 14.png",
-    imageAlt: "Millennial design blog post cover",
+    name: "Going all-in with millennial design",
+    url: "Read More",
+    time: "5 min",
+    date: "12 Oct 2022",
+    img: "/blogs/Rectangle 14.png",
   },
   {
-    id: "3",
-    title: "Going all-in with millennial design",
-    slug: "/blog/millennial-design-3",
-    readTime: "5 min",
-    publishDate: "12 Oct 2022",
-    imageSrc: "/blogs/Rectangle 15.png",
-    imageAlt: "Millennial design blog post cover",
+    name: "Going all-in with millennial design",
+    url: "Read More",
+    time: "5 min",
+    date: "12 Oct 2022",
+    img: "/blogs/Rectangle 15.png",
   },
 ];
 
-const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
+const BlogCard = ({ name, url, time, date, img }: BlogList) => {
   return (
-    <article className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-      <Link href={post.slug} className="block">
-        <div className="relative aspect-[4/3] overflow-hidden">
-          <Image
-            src={post.imageSrc}
-            alt={post.imageAlt}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        
-        <div className="p-6 space-y-4">
-          <h3 className="text-lg font-medium font-[poppins] text-gray-800 group-hover:text-gray-600 transition-colors duration-300">
-            {post.title}
-          </h3>
-          
-          <div className="flex items-center justify-between text-sm text-gray-500">
-            <span className="flex items-center gap-1.5">
-              <IoMdTime className="w-4 h-4" aria-hidden="true" />
-              <span>{post.readTime}</span>
-            </span>
-            <span className="flex items-center gap-1.5">
-              <LuCalendar className="w-4 h-4" aria-hidden="true" />
-              <time dateTime={post.publishDate}>{post.publishDate}</time>
-            </span>
-          </div>
-          
-          <span className="inline-flex items-center text-black group-hover:text-gray-600 font-medium transition-colors duration-300">
-            Read More
-            <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+    <article className="bg-white hover:shadow-md transition-transform ease-in-out hover:scale-105 duration-500 rounded-md overflow-hidden flex flex-col">
+      <Image
+        src={img}
+        alt={name}
+        width={400}
+        height={300}
+        className="w-full object-cover"
+      />
+      <div className="p-4 flex flex-col gap-2">
+        <h3 className="text-base font-light font-poppins text-gray-700">
+          {name}
+        </h3>
+        <Link
+          href={url}
+          aria-label={`Read more about ${name}`}
+          className="text-lg text-center font-medium text-black font-poppins border-b-2 border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+        >
+          Read More
+        </Link>
+        <div className="flex justify-between items-center text-gray-500 text-sm">
+          <span className="flex items-center gap-1">
+            <IoMdTime />
+            {time}
+          </span>
+          <span className="flex items-center gap-1">
+            <LuCalendar />
+            {date}
           </span>
         </div>
-      </Link>
+      </div>
     </article>
   );
 };
 
-const Blog: React.FC = () => {
+const Blog = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" aria-labelledby="blog-heading">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 
-            id="blog-heading"
-            className="text-3xl sm:text-4xl font-medium font-[poppins] text-gray-900 mb-4"
-          >
-            Our Blogs
-          </h2>
-          <p className="text-lg text-gray-600 font-[poppins] max-w-2xl mx-auto">
-            Find a bright idea to suit your taste with our great selection
-          </p>
-        </div>
+    <section className="px-4 py-8 w-full min-h-screen bg-white select-none">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium font-poppins">
+          Our Blogs
+        </h1>
+        <h5 className="text-sm sm:text-base font-medium text-gray-500 font-poppins">
+          Find a bright idea to suit your taste with our great selection
+        </h5>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-          {blogPosts.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 md:px-12 lg:px-16">
+        {blog.map((list, index) => (
+          <BlogCard key={index} {...list} />
+        ))}
+      </div>
 
-        <div className="text-center">
-          <Link
-            href="/blog"
-            className="inline-flex items-center px-6 py-3 text-lg font-medium font-[poppins] text-black border-b-2 border-black hover:text-gray-600 hover:border-gray-600 transition-all duration-300"
-          >
-            View All Posts
-            <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-        </div>
+      <div className="flex flex-col items-center mt-8">
+        <Link
+          href="/"
+          className="text-lg font-medium font-poppins text-center text-black border-b-2 border-black hover:text-gray-500 hover:border-gray-500 transition duration-300"
+        >
+          View All
+        </Link>
       </div>
     </section>
   );
 };
 
 export default Blog;
-  
-  

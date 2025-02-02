@@ -1,93 +1,97 @@
-
 import Link from "next/link";
 import React from "react";
 
-
-interface FooterLink {
-  label: string;
-  href: string;
-}
-
 const Footer = () => {
-  const links: { [key: string]: FooterLink[] } = {
-    links: [
-      { label: "Home", href: "/" },
-      { label: "Shop", href: "/" },
-      { label: "About", href: "/" },
-      { label: "Contact", href: "/" },
-    ],
-    help: [
-      { label: "Payment Options", href: "/" },
-      { label: "Returns", href: "/" },
-      { label: "Privacy Policies", href: "/" },
-    ],
-  };
-
   return (
-    <footer className="w-full bg-white font-[poppins] select-none">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-          {/* Address Section */}
-          <div className="order-1 lg:order-1">
-            <div className="text-gray-400 text-sm font-light space-y-2">
-              <p className="leading-relaxed">
-                400 University Drive Suite 200 Coral
-                <br />
-                spaGables,
-                <br />
-                FL 33134 USA
-              </p>
-            </div>
-          </div>
+    <footer className="px-4 sm:px-6 md:px-12 lg:px-28 py-11 w-full font-[poppins] select-none">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+        {/* Address Section */}
+        <address className="text-gray-400 text-sm font-light mt-8 sm:mt-24 mr-0 sm:mr-8">
+          400 University Drive Suite 200 Coral <br />
+          spaGables, <br />
+          FL 33134 USA
+        </address>
 
-          {/* Links Section */}
-          <div className="order-2 lg:order-2">
-            <h2 className="text-gray-400 font-medium mb-6">Links</h2>
-            <nav>
-              <ul className="space-y-4">
-                {links.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-800 hover:text-gray-600 transition-colors duration-200"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
+        {/* Links Section */}
+        <nav className="font-medium">
+          <ul className="space-y-4 sm:space-y-9">
+            <li className="text-gray-400">Link</li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-          {/* Help Section */}
-          <div className="order-3 lg:order-3">
-            <h2 className="text-gray-400 font-medium mb-6">Help</h2>
-            <nav>
-              <ul className="space-y-4">
-                {links.help.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-800 hover:text-gray-600 transition-colors duration-200"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
+        {/* Help Section */}
+        <nav className="font-medium">
+          <ul className="space-y-4 sm:space-y-9">
+            <li className="text-gray-400">Help</li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Payment Options
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Returns
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Privacy Policies
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-          
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-sm text-gray-600">
-            © {new Date().getFullYear()} Meuble House. All rights reserved.
-          </p>
+        {/* Newsletter Section */}
+        <div className="font-medium">
+          <span className="text-gray-400">Newsletter</span>
+          <form
+            aria-label="Newsletter subscription form"
+            className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4 mt-4"
+          >
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              aria-label="Email address"
+              className="w-full md:w-auto border-b-[1.5px] border-black focus:outline-none pb-4"
+            />
+            <button
+              type="submit"
+              aria-label="Subscribe to newsletter"
+              className="px-4 py-2 text-black hover:text-gray-500 border-b-[1.5px] border-black"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
       </div>
+
+      {/* Divider */}
+      <div className="border-b-[1.5px] border-gray-300 mt-5"></div>
+
+      {/* Footer Bottom Text */}
+      <p className="text-sm text-gray-800 mt-4">
+        2022 Meuble House. All rights reserved.
+      </p>
     </footer>
   );
 };
