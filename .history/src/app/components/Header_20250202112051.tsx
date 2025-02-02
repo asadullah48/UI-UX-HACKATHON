@@ -55,28 +55,8 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="relative flex items-center justify-end text-[25px] gap-6 sm:gap-11 md:gap-5 md:ml-16 font-[poppins]">
-  <Link href={"/"} className="hover:text-slate-600">
-    <TbUserExclamation className="w-6 h-6" />
-  </Link>
-  <Link href={"/"} className="hover:text-slate-600">
-    <FiSearch className="w-6 h-6" />
-  </Link>
-  <Link href={"/"} className="hover:text-slate-600">
-    <FaRegHeart className="w-6 h-6" />
-  </Link>
-  <Link href={"/"} className="hover:text-slate-600">
-    <AiOutlineShoppingCart className="w-6 h-6" />
-  </Link>
-  <button
-    onClick={toggleMenu}
-    className="text-2xl md:hidden"
-    aria-label="Toggle Menu"
-    
-  >
-    <TiThMenu className="w-6 h-6" />
-  </button>
-</div>
+      
+      </div>
     </header>
   );
 };
