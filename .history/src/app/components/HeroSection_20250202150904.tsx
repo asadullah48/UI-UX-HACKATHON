@@ -20,7 +20,7 @@ const HeroSection = () => {
           alt={title}
           width={500}
           height={500}
-          className="w-full sm:w-[400px] md:w-[853px] md:h-[900px]"
+          className=""
         />
       </div>
     </section>
